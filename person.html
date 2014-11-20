@@ -1,0 +1,70 @@
+<html>
+
+<body>
+
+<canvas id="canvas" width="700" height = "700"></canvas>
+
+
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+
+//  ctx.fillRect(200,300,100,260);
+//  ctx.beginPath();
+
+
+
+
+
+ ctx.moveTo(200,300);
+ctx.lineTo(300,300);
+  ctx.lineTo(290,530);
+  ctx.lineTo(210,530);
+  ctx.lineTo(200,300);
+  ctx.lineTo(300,340);
+  ctx.fill();
+
+//  ctx.beginPath();
+  ctx.moveTo(300,300);
+  ctx.quadraticCurveTo(380,510,400,310);
+  ctx.quadraticCurveTo(450,330,420,340);
+  ctx.quadraticCurveTo(380,510,290,350);
+  ctx.fill();
+
+  ctx.beginPath();
+  ctx.arc(250,258,50,0,Math.PI*2,true);
+  ctx.fill();
+
+    ctx.beginPath();
+    ctx.moveTo(200,300);
+    ctx.bezierCurveTo(170,300,180,580,100,300);
+    ctx.bezierCurveTo(80,350,180,580,205,330);
+    ctx.fill();
+
+
+//  ctx.beginPath();
+//  ctx.moveTo(200,200);
+//  ctx.lineTo(300,300);
+  //ctx.lineTo(400,200);
+//  ctx.fill();
+
+
+//  ctx.arc(75,75,50,0,Math.PI*2,true);
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

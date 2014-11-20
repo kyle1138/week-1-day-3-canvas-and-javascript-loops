@@ -1,0 +1,28 @@
+<html>
+
+<body>
+
+<canvas id="the_canvas" width = "1000" height = "1000">
+</canvas>
+
+<script>
+
+  var canvas = document.getElementById("the_canvas");
+  var ctx = canvas.getContext("2d");
+  var box = prompt("How many boxes do you want to see?");
+  var boxnum = parseInt(box);
+  var boxput = 1;
+  while (boxput <= boxnum){
+
+ctx.fillStyle = "red";
+ctx.fillRect((Math.random()*1000),(Math.random()*1000),(Math.random()*100),(Math.random()*100));
+boxput ++;
+}
+
+
+
+</script>
+
+</body>
+
+</html>
